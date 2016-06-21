@@ -15,7 +15,7 @@ Screen commands (^=cntrl)
 
 Deleting Text
 -------------
-x	   delete single character under cursor (10x deletes 10)
+x    delete single character under cursor (10x deletes 10)
 dw   delete the single word beginning with character under cursor (d10w deletes 1o words)
 D    delete the remainder of the line, starting with current cursor position
 dd   delete entire current line (5dd delete 5 lines )
