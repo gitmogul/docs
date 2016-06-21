@@ -20,3 +20,38 @@ dw   delete the single word beginning with character under cursor (d10w deletes 
 D    delete the remainder of the line, starting with current cursor position
 dd   delete entire current line (5dd delete 5 lines )
 
+Cut and Paste
+-------------
+yy   yank current line (10yy yanks 10 lines)
+p    paste line after current line
+
+Search and replace
+------------------
+/<s> search forward from cursor 
+?<s> search backword from cursor
+n    move to next occurrence of search string
+N	   move to next occurrence of search string in opposite direction
+
+Save commands
+------------
+:w              write current contents to file
+:w <file>       write current contents to new file
+:12,35w <file>	write the contents of the lines 12-35 to a <file>
+:wq             save current file and quit
+:q!             quit without saving
+
+
+Read comamnds
+----------
+:r<file> read file and insert after current line 
+:r filename<Return>	read file named filename and insert after current line 
+(the line with cursor)
+ 	:w<Return>	write current contents to file named in original vi call
+ 	:w newfile<Return>	write current contents to a new file named newfile
+ 	:12,35w smallfile<Return>	write the contents of the lines numbered 12 through 35 to a new file named smallfile
+ 	:w! prevfile<Return>	write current contents over a pre-existing file named prevfile
+
+Misc
+----
+:=   get total number of lines in a file
+
