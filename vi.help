@@ -1,0 +1,10 @@
+Cursor commands
+---------------
+
+0     move cursor to beginning of line
+$     move cursor to end of current line
+w     move cursor to beginning of next word
+b     move cursor back to beginning of preceding word
+:n    move cursor to beginning of line n
+:0    move cursor to beginning of first line 
+:$    move cursor to beginning of last line
