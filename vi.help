@@ -1,57 +1,70 @@
 Cursor commands
 ---------------
-0     move cursor to beginning of line
-$     move cursor to end of current line
-w     move cursor to beginning of next word
-b     move cursor back to beginning of preceding word
-:n    move cursor to beginning of line n
-:0    move cursor to beginning of first line 
-:$    move cursor to beginning of last line
+0            move cursor to beginning of line
+$            move cursor to end of current line
+w            move cursor to beginning of next word
+b            move cursor back to beginning of preceding word
+:n           move cursor to beginning of line n
+:0           move cursor to beginning of first line 
+:$           move cursor to beginning of last line
 
 Screen commands (^=cntrl)
----------------
-^f   move forward one screen
-^b   move backward one screen
+-------------------------
+^f           move forward one screen
+^b           move backward one screen
 
 Deleting Text
 -------------
-x    delete single character under cursor (10x deletes 10)
-dw   delete the single word beginning with character under cursor (d10w deletes 1o words)
-D    delete the remainder of the line, starting with current cursor position
-dd   delete entire current line (5dd delete 5 lines )
+x             delete single character under cursor (10x deletes 10)
+dw            delete the single word beginning with character under cursor (d10w deletes 1o words)
+D             delete the remainder of the line, starting with current cursor position
+dd            delete entire current line (5dd delete 5 lines )
+
+
+Change/Replace
+--------------
+r	            replace single character under cursor
+R	            replace characters starting with current cursor position
+cw	           change the current word with new text
+C	            replace from cursor to end of line
+cc	           replace entire current line (Ncc for many lines )
+:s/<text>     search for a string
+:s/<a>/<b>    replace a with b in current line
+:%s/<a>/<b>   replace a with b in entire file
+
+Insert
+------
+I             insert from beginning of current line
+a             insert from cursor
+A             insert from end of current line
 
 Cut and Paste
 -------------
-yy   yank current line (10yy yanks 10 lines)
-p    paste line after current line
+yy             yank current line (10yy yanks 10 lines)
+p              paste line after current line
 
 Search and replace
 ------------------
-/<s> search forward from cursor 
-?<s> search backword from cursor
-n    move to next occurrence of search string
-N	   move to next occurrence of search string in opposite direction
+/<s>           search forward from cursor 
+?<s>           search backword from cursor
+n              move to next occurrence of search string
+N	             move to next occurrence of search string in opposite direction
 
 Save commands
 ------------
 :w              write current contents to file
 :w <file>       write current contents to new file
-:12,35w <file>	write the contents of the lines 12-35 to a <file>
+:12,35w <file>	 write the contents of the lines 12-35 to a <file>
 :wq             save current file and quit
 :q!             quit without saving
 
 
-Read comamnds
-----------
-:r<file> read file and insert after current line 
-:r filename<Return>	read file named filename and insert after current line 
-(the line with cursor)
- 	:w<Return>	write current contents to file named in original vi call
- 	:w newfile<Return>	write current contents to a new file named newfile
- 	:12,35w smallfile<Return>	write the contents of the lines numbered 12 through 35 to a new file named smallfile
- 	:w! prevfile<Return>	write current contents over a pre-existing file named prevfile
+Read commands
+-------------
+:r<file>        read file and insert after current line 
+
 
 Misc
 ----
-:=   get total number of lines in a file
+:=              get total number of lines in a file
 
