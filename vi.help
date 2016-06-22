@@ -48,13 +48,13 @@ Search and replace
 /<s>           search forward from cursor 
 ?<s>           search backword from cursor
 n              move to next occurrence of search string
-N	             move to next occurrence of search string in opposite direction
+N              move to next occurrence of search string in opposite direction
 
 Save commands
 ------------
 :w              write current contents to file
 :w <file>       write current contents to new file
-:12,35w <file>	 write the contents of the lines 12-35 to a <file>
+:12,35w <file>	write the contents of the lines 12-35 to a <file>
 :wq             save current file and quit
 :q!             quit without saving
 
