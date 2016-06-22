@@ -23,11 +23,11 @@ dd            delete entire current line (5dd delete 5 lines )
 
 Change/Replace
 --------------
-r	            replace single character under cursor
-R	            replace characters starting with current cursor position
-cw	           change the current word with new text
-C	            replace from cursor to end of line
-cc	           replace entire current line (Ncc for many lines )
+r             replace single character under cursor
+R             replace characters starting with current cursor position
+cw            change the current word with new text
+C             replace from cursor to end of line
+cc            replace entire current line (Ncc for many lines )
 :s/<text>     search for a string
 :s/<a>/<b>    replace a with b in current line
 :%s/<a>/<b>   replace a with b in entire file
