@@ -64,6 +64,13 @@ Read commands
 :r<file>        read file and insert after current line 
 
 
+Shell Commands
+--------------
+
+:!<shell cmd>   runs shell command
+:r !<shell cmd> pastes the command output in to the file
+
+
 Misc
 ----
 :=              get total number of lines in a file
