@@ -75,3 +75,8 @@ Misc
 ----
 :=              get total number of lines in a file
 
+Tabs
+----
+:set tabstop=4
+:set expandtab  The two comamnds will set the tab lenagth = 4 and will replace tabs to spaces
+:retab          This command will re tab with rules set before. If you run the 3 commands you will replace all tabs with 4 spaces
