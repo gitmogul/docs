@@ -80,3 +80,10 @@ Tabs
 :set tabstop=4
 :set expandtab  The two comamnds will set the tab lenagth = 4 and will replace tabs to spaces
 :retab          This command will re tab with rules set before. If you run the 3 commands you will replace all tabs with 4 spaces
+
+Cut and Paste
+-------------
+:v              move cursor to location upto which you want to select
+:y              will copy selected text
+:d              will delete selected text
+:p/P            will paste text
