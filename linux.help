@@ -1,3 +1,7 @@
 #Remove all pyc files 
 find . -name '*.pyc' | xargs rm
 
+#find py files in a directory and grep for print
+find ./temp/ -name "*.py" | xargs grep "print"
+
+
