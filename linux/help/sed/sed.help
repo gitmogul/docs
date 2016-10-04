@@ -37,4 +37,29 @@ cat sample.txt | sed -n '1,5p'
 # will not double print. you can use other options above 
 
 
-############################# string substitution ###########################################
+#############################    substitution ###########################################
+cat sample.txt | sed 's/l/L/g'
+# replace in every line all occurances of l with L
+
+cat sample.txt | sed 's/l/L/1'
+# replace in every line first occurance of l with L
+
+cat sample.txt | sed 's/Hello/HELLO/g'
+# replace in every line in file all occurance of Hello with HELLO
+
+cat sample.txt | sed  's/L/X/i'
+# replace first occurance of L in every line, ignoring case, with X
+
+cat sample.txt | sed  's/Hello//g'
+# will replace all occurances of Hello with nothing in every line. 
+
+cat sample.txt | sed  '1,5s/Hello/HELLO/g'
+# Replace for lines 1,5 of every occuranace of Hello with HELLO
+cat sample.txt | sed  '1~2s/Hello/HELLO/g'
+cat sample.txt | sed  '1,+2s/Hello/HELLO/g'
+
+
+
+
+
+
