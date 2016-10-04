@@ -1,7 +1,32 @@
-#Remove all pyc files 
-find . -name '*.pyc' | xargs rm
+#sed basics
+# first create file sample.txt that has following...
+cat sample.txt
+Hello1
+Hello2
+Hello3
+Hello4
+Hello5
+Hello6
+Hello7
+Hello8
+Hello9
+Hello10
 
-#find py files in a directory and grep for print
-find ./temp/ -name "*.py" | xargs grep "print"
+cat sample.txt | sed '-d5'
+# will delete 5th line
 
+cat sample.txt | sed '1-5d'
+# will delete lines 1 through 5
 
+cat sample.txt | sed '1-+2d'
+# will delete from starting line 1, 2lines (lines 1,2,3 deleted)
+
+cat sample.txt | sed '1~2d'
+# will delete 1st line and then every 2nd line after that till EOF
+Hello2
+Hello4
+Hello6
+Hello8
+Hello10
+
+cat sample.txt | sed '1-5p'
