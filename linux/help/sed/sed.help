@@ -15,7 +15,7 @@ Hello10
 cat sample.txt | sed '-d5'
 # will delete 5th line
 
-cat sample.txt | sed '1-5d'
+cat sample.txt | sed '1,5d'
 # will delete lines 1 through 5
 
 cat sample.txt | sed '1-+2d'
@@ -32,5 +32,6 @@ Hello10
 cat sample.txt | sed '1,5p'
 # will print lines 1 through 5. To avoid printing twice use -n option
 cat sample.txt | sed -n '1,5p'
+# will not double print. you can use other options above 
 
 
