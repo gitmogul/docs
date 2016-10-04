@@ -29,4 +29,8 @@ Hello6
 Hello8
 Hello10
 
-cat sample.txt | sed '1-5p'
+cat sample.txt | sed '1,5p'
+# will print lines 1 through 5. To avoid printing twice use -n option
+cat sample.txt | sed -n '1,5p'
+
+
