@@ -12,6 +12,7 @@ Hello8
 Hello9
 Hello10
 
+############################# -d delete option ###########################################
 cat sample.txt | sed '-d5'
 # will delete 5th line
 
@@ -29,9 +30,11 @@ Hello6
 Hello8
 Hello10
 
+############################# -p print option ###########################################
 cat sample.txt | sed '1,5p'
 # will print lines 1 through 5. To avoid printing twice use -n option
 cat sample.txt | sed -n '1,5p'
 # will not double print. you can use other options above 
 
 
+############################# string substitution ###########################################
