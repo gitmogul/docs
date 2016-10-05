@@ -59,6 +59,9 @@ cat sample.txt | sed  '1~2s/Hello/HELLO/g'
 cat sample.txt | sed  '1,+2s/Hello/HELLO/g'
 
 
+##################################################################
+cat sample.txt | sed -n '/l\{2\}/p'
+# print all lines that have 2 consecutive l's
 
 
 
